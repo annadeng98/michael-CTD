@@ -1,0 +1,57 @@
+.errr{
+  display:flex;
+}
+.errrr{
+  height:20px;
+  width:30px;
+  margin-top:16px;
+}
+.pi {
+  display: flex;
+  font-size: 16px;
+}
+
+#space {
+  margin-top: 16px;
+}
+
+.acc {
+  display: flex;
+  font-size: 16px;
+}
+
+#accuracy {
+  margin-top: 16px;
+}
+.e {
+  display: flex;
+  font-size: 16px;
+}
+
+#spacee {
+  margin-top: 16px;
+}
+
+.eacc {
+  display: flex;
+  font-size: 16px;
+}
+
+#accuracye {
+  margin-top: 16px;
+}
+.gwyeu{
+  display:flex;
+}
+#spacesq{
+  margin-top:16px;
+}
+.sacc{
+  display:flex;
+}
+#accuracysq{
+  margin-top:16px;
+}
+.hurgh{
+  width:23.5px;
+}

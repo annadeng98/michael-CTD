@@ -1,0 +1,17 @@
+.pi {
+  display: flex;
+  font-size: 32px;
+}
+
+#space {
+  margin-top: 32px;
+}
+
+.acc {
+  display: flex;
+  font-size: 32px;
+}
+
+#accuracy {
+  margin-top: 32px;
+}

@@ -1,0 +1,143 @@
+<html>
+<title>all the calculators</title>
+<link rel="icon" href="https://latex.artofproblemsolving.com/f/e/e/fee1ff4df970151795278907ffbfcef76389cee9.png" type="image/x-icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="testing.css">
+<body>
+
+
+
+<div class="">
+  <button class="" onclick="open_('Home')">Normal Calculator</button>
+  <button class="" onclick="open_('Pi')">Pi Calculator</button>
+  <button class="" onclick="open_('E')">E Calculator</button>
+  <button class="" onclick="open_('Sq')">Square Root Calculator</button>
+  <button class="" onclick="open_('fun')">For Fun</button>
+</div>
+
+<div id="Home" class="erk">
+  <h2>Calculator (but something is wrong with 0 divide/multiply/subtract/add a number... decimals don't work)</h2>
+  <p></p>
+  <div id="showthis">0</div>
+  <div>
+  <button class="hurgh" onclick="addnumber(7)">7</button>
+  <button class="hurgh" onclick="addnumber(8)">8</button>
+  <button class="hurgh" onclick="addnumber(9)">9</button>
+  <button class="hurgh" onclick='divide()'>÷</button>
+  </div>
+  <div>
+  <button class="hurgh" onclick="addnumber(4)">4</button>
+  <button class="hurgh" onclick="addnumber(5)">5</button>
+  <button class="hurgh" onclick="addnumber(6)">6</button>
+  <button class="hurgh" onclick="multiply()">x</button>
+  </div>
+  <div>
+  <button class="hurgh" onclick="addnumber(1)">1</button>
+  <button class="hurgh" onclick="addnumber(2)">2</button>
+  <button class="hurgh" onclick="addnumber(3)">3</button>
+  <button class="hurgh" onclick="subtract()">-</button>
+  </div>
+  <div>
+  <button class="hurgh">.</button>
+  <button class="hurgh" onclick="addnumber(0)">0</button>
+  <button class="hurgh" onclick="equals()">=</button>
+  <button class="hurgh" onclick="add()">+</button>
+  </div>
+</div>
+
+<div id="Pi" class="erk" style="display:none">
+  <h2>Pi Calculator</h2>
+  <div>
+  <button onclick='m()'>increase accuracy</button>
+  <button onclick='d()'>decrease accuracy</button>
+  </div>
+
+  <div class='pi'>
+    <p>calculated approximation of pi: </p>
+    <div id='space'></div>
+  </div>
+  <div class='acc'>
+    <p>accuracy of approximation: </p>
+    <div id='accuracy'></div>
+  </div>
+
+
+</div>
+
+<div id="E" class="erk" style="display:none">
+  <h2>E Calculator</h2>
+  <div>
+  <button onclick='h()'>increase accuracy</button>
+  <button onclick='f()'>decrease accuracy</button>
+  </div>
+
+  <div class='e'>
+    <p>calculated approximation of e: </p>
+    <div id='spacee'></div>
+  </div>
+  <div class='eacc'>
+    <p>accuracy of approximation: </p>
+    <div id='accuracye'></div>
+  </div>
+</div>
+
+
+<div id="Sq" class="erk" style="display:none">
+  <h2>Square Root Calculator</h2>
+  <div class="errr">
+  <p id="re">number to be square rooted:</p>
+  <div class="errrr">
+  <input type="number" id="er?" name="er?"
+       min="2" max="100" value="2">
+  </div>
+  </div>
+  <div id="erre">
+  <button onclick="hidee()">start</button>
+  </div>
+  <div id='erete' style="display:none">
+  <div>
+  <button onclick='x()'>increase accuracy</button>
+  <button onclick='y()'>decrease accuracy</button>
+  </div>
+
+  <div class='gwyeu'>
+    <p>calculated approximation of sqrt(number): </p>
+    <div id='spacesq'></div>
+  </div>
+  <div class='sacc'>
+    <p>accuracy of approximation: </p>
+    <div id='accuracysq'></div>
+  </div>
+  <button onclick="showe()">restart</button>
+  </div>
+  </div>
+  <div id="fun" class="erk" style="display:none">
+    <iframe width="900" height="900" src="https://www.desmos.com/calculator"></iframe>
+  </div>
+
+
+  <script>
+  function hidee(){
+    document.getElementById("er?").style.display="none"
+    document.getElementById("re").style.display="none"
+    document.getElementById("erre").style.display="none"
+    document.getElementById("erete").style.display="block"
+  }
+  </script>
+
+
+<script>
+function open_(ope) {
+  var i;
+  var x = document.getElementsByClassName("erk");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(ope).style.display = "block";
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
